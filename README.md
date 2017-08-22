@@ -14,7 +14,7 @@ To try the sample app do the following:
 
 ### Registering the app
 
-In your Web browser, go to [Watson Work Services - Apps](https://workspace.ibm.com/developer/apps), add a new app and add the url of the server you will be running this application from https://www.example.com/callback. Make sure the /callback is included in this url. Next write down its app id and app secret.
+In your Web browser, go to [Watson Work Services - Apps](https://developer.watsonwork.ibm.com/apps), add a new app and add the url of the server you will be running this application from https://www.example.com/callback. Make sure the /callback is included in this url. Next write down its app id and app secret.
 
 
 ### Building the app
@@ -25,7 +25,7 @@ In a terminal window, do the following:
 ```sh
 
 # Get the code
-git clone https://github.ibm.com/gilesk/run-as-user.git
+git clone https://github.com/watsonwork/watsonwork-authorize-as-user.git
 
 # Install dependencies
 npm install
