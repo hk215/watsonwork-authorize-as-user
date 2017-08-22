@@ -1,8 +1,7 @@
 {
   "name": "demo",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://pages.github.ibm.com/gilesk/act-as-user",
+  "private": false,
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "request-debug": "^0.2.0",
