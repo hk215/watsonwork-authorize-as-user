@@ -12,8 +12,7 @@ To try the sample app do the following:
 
 ### Registering the app
 
-In your Web browser, go to [Watson Work Services - Apps]
-(https://workspace.ibm.com/developer/apps), add a new app and add the url of the server you will be running this application from https://www.example.com/callback. Make sure the /callback is included in this url. Next write down its app id and app secret.
+In your Web browser, go to [Watson Work Services - Apps](https://workspace.ibm.com/developer/apps), add a new app and add the url of the server you will be running this application from https://www.example.com/callback. Make sure the /callback is included in this url. Next write down its app id and app secret.
 
 ### Building the app
 
