@@ -71,44 +71,44 @@ class AuthenticateServer extends Component {
       <div className='layout'>
         <h3>Create an application that acts on my behalf</h3>
         <div className='panel-body'>
-        <div className='panelLeft'>
-        <h4>Step 2: Token Request</h4>
-        <p>
-          This next step involves the application authenticating into Watson Workspace. First you will need to populate the fields below so we can generate the
-          proper parameters to send to the authorization server.
-        </p>
-        <form onSubmit={this.getServerToken}>
-          <FormGroup>
-          <div className='fields'>
-            <ControlLabel htmlFor='client_id'>Client ID (Required)</ControlLabel>
-            <FormControl type='text' id='client_id' value={this.state.client_id} onChange={this.handleChange}></FormControl>
+          <div className='panelLeft'>
+            <h4>Step 2: Token Request</h4>
+            <p>
+              This next step involves the application authenticating into Watson Workspace. First you will need to populate the fields below so we can generate the
+              proper parameters to send to the authorization server.
+            </p>
+            <form onSubmit={this.getServerToken}>
+              <FormGroup>
+                <div className='fields'>
+                  <ControlLabel htmlFor='client_id'>Client ID (Required)</ControlLabel>
+                  <FormControl type='text' id='client_id' value={this.state.client_id} onChange={this.handleChange}></FormControl>
+                </div>
+                <div className='fields'>
+                  <ControlLabel htmlFor='client_secret'>Client Secret (Required)</ControlLabel>
+                  <FormControl type='text' id='client_secret' value={this.state.client_secret} onChange={this.handleChange}></FormControl>
+                </div>
+                <div className='fields'>
+                  <ControlLabel htmlFor='redirect_uri'>Redirect URI (Required)</ControlLabel>
+                  <FormControl type='text' id='redirect_uri' value={this.state.redirect_uri} onChange={this.handleChange}></FormControl>
+                </div>
+                <div className='fields'>
+                  <ControlLabel htmlFor='code'>Code (Required)</ControlLabel>
+                  <FormControl type='text' id='code' value={this.state.code} disabled></FormControl>
+                </div>
+                <div className='fields'x>
+                  <Button type='submit' bsStyle="primary"> Authenticate Application with Watson Workspace Services</Button>
+                </div>
+              </FormGroup>
+            </form>
           </div>
-          <div className='fields'>
-            <ControlLabel htmlFor='client_secret'>Client Secrect (Required)</ControlLabel>
-            <FormControl type='text' id='client_secret' value={this.state.client_secret} onChange={this.handleChange}></FormControl>
-          </div>
-          <div className='fields'>
-            <ControlLabel htmlFor='redirect_uri'>Redirect URI (Required)</ControlLabel>
-            <FormControl type='text' id='redirect_uri' value={this.state.redirect_uri} onChange={this.handleChange}></FormControl>
-          </div>
-          <div className='fields'>
-            <ControlLabel htmlFor='code'>Code (Required)</ControlLabel>
-            <FormControl type='text' id='code' value={this.state.code} disabled></FormControl>
-          </div>
-          <div className='fields'x>
-            <Button type='submit' bsStyle="primary"> Authenticate Application with Watson Workspace Services</Button>
-          </div>
-        </FormGroup>
-        </form>
-      </div>
 
-      <div className='panelRight'>
-        <aside>
-          <dl>
-            <dt><dfn>Client ID</dfn></dt>
-            <dd>This ID is obtained when you register your application with Watson Workspace Services</dd>
-            <dt><dfn>Client Secret</dfn></dt>
-            <dd>This is obtained when you register your application with Watson Workspace Services</dd>
+          <div className='panelRight'>
+            <aside>
+              <dl>
+                <dt><dfn>Client ID</dfn></dt>
+                <dd>This ID is obtained when you register your application with Watson Workspace Services</dd>
+                <dt><dfn>Client Secret</dfn></dt>
+                <dd>This is obtained when you register your application with Watson Workspace Services</dd>
             <dt><dfn>Redirect_URI</dfn></dt>
             <dd>This is the same URI that was used when registering your application with Watson Workspace Services </dd>
             <dt><dfn>Code</dfn></dt>
