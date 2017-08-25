@@ -72,7 +72,7 @@ class Demo extends Component {
                     <h4>Setup: Application Registration</h4>
                     <p>
                       In order to add an application to Watson Workspace you must first register your application. Visit
-                      https://workspace.ibm.com/developer/apps, enter the name and discription of the application. Next select
+                      https://workspace.ibm.com/developer/apps, enter the name and description of the application. Next select
                       "Add an OAuth2 Redirection URL", this value will be used later on in the application.
                     </p>
                     <Image className='img' src={setuppng} responsive/>
